@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useEffect } from "react";
 import Home from './Home';
 import Projects from './Projects';
-import Contact from './Contact';
+import Contact from './pages/Contact';
 import NotFound from './NotFound';
 
 function App() {

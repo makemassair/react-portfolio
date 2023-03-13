@@ -1,4 +1,5 @@
 import React from "react";
+import ContactLinks from "../ContactLinks";
 
 function ContactForm() {
   const [result, setResult] = React.useState("");
@@ -26,7 +27,11 @@ function ContactForm() {
 
   return (
     <div className="App">
-      <h1>React File Upload Form</h1>
+      <h1>Contact Michael</h1>
+      <p className="contact-about">You can contact me in several ways, either by clicking one of the links below. Or, alternatively sending me a message.</p>
+      <div className="contact-links">
+        <ContactLinks />
+      </div>
       <form onSubmit={onSubmit}>
         <input type="text" name="name" placeholder='Enter your name' required/>
         <input type="email" name="email" placeholder='Enter your email' required/>
