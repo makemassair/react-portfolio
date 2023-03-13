@@ -1,4 +1,4 @@
-import avatar from './assets/img/avatar-800.jpg';
+import avatar from '../assets/img/avatar-800.jpg';
 
 const Home = () => {
     return ( 

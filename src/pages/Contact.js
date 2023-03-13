@@ -1,5 +1,5 @@
 import React from "react";
-import ContactLinks from "../ContactLinks";
+import ContactLinks from "../components/ContactLinks";
 
 function ContactForm() {
   const [result, setResult] = React.useState("");
