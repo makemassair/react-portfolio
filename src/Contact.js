@@ -28,10 +28,10 @@ function ContactForm() {
     <div className="App">
       <h1>React File Upload Form</h1>
       <form onSubmit={onSubmit}>
-        <input type="text" name="name"/>
-        <input type="email" name="email"/>
-        <textarea name="message"></textarea>
-        <input type="submit" />
+        <input type="text" name="name" placeholder='Enter your name' required/>
+        <input type="email" name="email" placeholder='Enter your email' required/>
+        <textarea name="message" placeholder='Enter your message' required></textarea>
+        <button type="submit">Submit</button>
       </form>
       <span>{result}</span>
     </div>
