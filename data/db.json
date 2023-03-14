@@ -1,46 +1,46 @@
 {
     "projects": [
         {
-            "title": "",
-            "url": "",
-            "github": "",
-            "screenshot": "",
-            "id": 1
+            "id": 1,
+            "title": "Team Profile Generator",
+            "url": "https://makemassair.github.io/OOP-Team-Profile-Generator/",
+            "github": "https://github.com/makemassair/OOP-Team-Profile-Generator",
+            "screenshot": "/img/screenshot-team.jpg"
         },
         {
-            "title": "",
-            "url": "",
-            "github": "",
-            "screenshot": "",
-            "id": 2
+            "id": 2,
+            "title": "README.md Generator",
+            "url": "https://makemassair.github.io/readme-generator-nodejs/",
+            "github": "https://github.com/makemassair/readme-generator-nodejs",
+            "screenshot": "/img/screenshot-readme.jpg"
         },
         {
-            "title": "",
-            "url": "",
-            "github": "",
-            "screenshot": "",
-            "id": 3
+            "id": 3,
+            "title": "Weather Dashboard",
+            "url": "https://makemassair.github.io/Weather-Dashboard/",
+            "github": "https://github.com/makemassair/Weather-Dashboard",
+            "screenshot": "/img/screenshot-weather.jpg"
         },
         {
-            "title": "",
-            "url": "",
-            "github": "",
-            "screenshot": "",
-            "id": 4
+            "id": 4,
+            "title": "Work Day Schedule",
+            "url": "https://makemassair.github.io/Work-Day-Scheduler/",
+            "github": "https://github.com/makemassair/Work-Day-Scheduler",
+            "screenshot": "/img/screenshot-schedule.jpg"
         },
         {
-            "title": "",
-            "url": "",
-            "github": "",
-            "screenshot": "",
-            "id": 5
+            "id": 5,
+            "title": "Code Quiz",
+            "url": "https://makemassair.github.io/Code-Quiz/",
+            "github": "https://github.com/makemassair/Code-Quiz",
+            "screenshot": "/img/screenshot-quiz.jpg"
         },
         {
-            "title": "",
+            "id": 6,
+            "title": "Bootstrap Portfolio",
             "url": "",
-            "github": "",
-            "screenshot": "",
-            "id": 6
+            "github": "https://github.com/makemassair/Bootstrap-Portfolio", 
+            "screenshot": "/img/screenshot-bootstrap-portfolio.jpg"
         }
     ]
 }
