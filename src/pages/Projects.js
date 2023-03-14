@@ -1,6 +1,7 @@
-const Projects = () => {
-    const { data: projects, error} = useFetch('https://')
+import Project from './Project';
+import projects from '../data/db.json'
 
+const Projects = () => {
 
     return ( 
         <div className="projects">
