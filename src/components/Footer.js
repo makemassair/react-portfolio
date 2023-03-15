@@ -4,9 +4,8 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-links">
-            <p>Built in React</p>
             <ContactLinks />
-            <p className="copyright">&copy; 2023 makemassair</p>
+            <div className="copyright">&copy; 2023 makemassair</div>
             </div>
         </footer>
       );

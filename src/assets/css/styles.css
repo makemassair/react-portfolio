@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Radley&display=swap');
 
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
 /* Navbar */
 .navbar {
+    border-bottom: 1px solid var(--yellBright);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,13 +19,13 @@
 .navbar h1 {
     color: var(--dark);
     font-family: 'Radley', serif;
-    font-size: 40px;
+    font-size: 24px;
     font-weight: normal;
     letter-spacing: -0.03em;
-    margin: 0;
+    margin: 0 12px;
     padding: 0;
 }
-.links {
+.links, .contact-links {
     font-family: 'Arimo';
     font-size: 13px;
     letter-spacing: 0.2px;
@@ -35,4 +43,50 @@
 .links a:hover {
     border-bottom: 3px solid var(--yellBright);
     color: #000;
+}
+/* Page */
+.container {
+    display: flex;
+    flex-grow: 1;
+    font-family: 'Radley';
+    margin: 0 64px;
+}
+
+/* Home */ 
+.home h1 {
+    font-family: 'Radley';
+    font-size: 12em;
+    font-weight: normal;
+    letter-spacing: -0.06em;
+    line-height: 0.8;
+}
+.home h2 {
+    font-family: 'Arimo';
+}
+.home img {
+    border: 16px solid var(--yellBright);
+    border-radius: 400px;
+    float: right;
+    max-width: 400px;
+}
+.home p {
+    font-size: 25px;
+}
+
+/* Footer */
+.footer {
+    border-top: 1px solid rgba(0,0,0,0.2);
+    font-size: 14px;
+    padding: 40px 32px 16px;
+    text-align: right;
+    text-transform: uppercase;
+}
+.contact-links a {
+    color: var(--dark);
+    font-weight: bold;
+    margin: 0 12px;
+    padding: 0 0 2px 0;
+}
+.copyright {
+    margin: 12px;
 }
