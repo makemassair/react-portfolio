@@ -8,16 +8,6 @@ import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
 function App() {
-  useEffect(() => {
-    if (document) {
-      const stylesheet = document.createElement("link");
-      stylesheet.rel = "stylesheet";
-      stylesheet.href = "https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css";
-
-      document.head.appendChild(stylesheet);
-    }
-  }, []);
-
   return (
     <Router>
     <div className="App">
