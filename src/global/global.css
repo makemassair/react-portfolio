@@ -1,5 +1,13 @@
 @import url("../assets/css/styles.css"); /* Using a url */
+:root {
+  --dark: #544A08;
+  --text: #342D00;
+  --yell: #FEDD00;
+  --yellBright: #ffff01;
+}
+
 body {
+  background-color: var(--yell);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -12,3 +20,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a {
+  text-decoration: none;
+}
+

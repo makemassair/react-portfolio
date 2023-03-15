@@ -1,2 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Radley&display=swap');
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2em;
+}
+.navbar h1 {
+    color: var(--dark);
+    font-family: 'Radley', serif;
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: -0.03em;
+    margin: 0;
+    padding: 0;
+}
+.links {
+    font-family: 'Arimo';
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+.links a {
+    color: var(--dark);
+    font-weight: bold;
+    margin: 0 12px;
+    padding: 0 0 2px 0;
+}
+.links .active {
+    color: #000;
+}
+.links a:hover {
+    border-bottom: 3px solid var(--yellBright);
+    color: #000;
+}
