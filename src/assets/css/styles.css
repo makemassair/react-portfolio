@@ -61,12 +61,26 @@
     max-width: 1800px;
 }
 .home-block {
-    background-color: var(--yellBright);
+    background-color: var(--dark);
+    color: var(--yell);
     display: flex;
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
     align-items: flex-start;
     flex-direction: row;
     justify-content: space-between;
+    letter-spacing: 0.2px;
+    padding: 9.6px 32px;
 }
+.page-title {
+    font-weight: bold;
+}
+.contact-bar {
+    display: flex;
+    column-gap: 24px;
+}
+
+
 .home img {
     border: 16px solid var(--yellBright);
     border-radius: 100px;
