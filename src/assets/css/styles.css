@@ -7,24 +7,26 @@
     justify-content: space-between;
     min-height: 100vh;
 }
-
 /* Navbar */
 .navbar {
     border-bottom: 1px solid var(--yellBright);
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: space-between;
     padding: 1.2em;
 }
 .navbar h1 {
     color: var(--dark);
+    display: block;
     font-family: 'Radley', serif;
     font-size: 24px;
     font-weight: normal;
     letter-spacing: -0.03em;
-    margin: 0 12px;
+    margin: 0 12px 12px;
     padding: 0;
 }
+
 .links, .contact-links {
     font-family: 'Arimo';
     font-size: 13px;
@@ -47,31 +49,55 @@
 /* Page */
 .container {
     display: flex;
+    flex-direction: column;
     flex-grow: 1;
     font-family: 'Radley';
-    margin: 0 64px;
+    margin: 0;
 }
 
 /* Home */ 
-.home h1 {
-    font-family: 'Radley';
-    font-size: 12em;
-    font-weight: normal;
-    letter-spacing: -0.06em;
-    line-height: 0.8;
+.home {
+    margin: 10vw 64px 6vw;
+    max-width: 1800px;
 }
-.home h2 {
-    font-family: 'Arimo';
+.home-block {
+    background-color: var(--yellBright);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .home img {
     border: 16px solid var(--yellBright);
-    border-radius: 400px;
-    float: right;
-    max-width: 400px;
+    border-radius: 100px;
+    margin: 0 0 0 16px;
+    max-width: 108px;
+}
+.home-block h2 {
+    color: var(--yell);
+    font-family: 'Arimo';
+    font-size: 24px;
+    margin: 16px 32px 32px;
+}
+.home h1 {
+    background-color: var(--yell);
+    font-family: 'Radley';
+    font-size: 18vw;
+    font-weight: normal;
+    letter-spacing: -0.06em;
+    line-height: 0.8;
+    margin: 0 0 64px;
 }
 .home p {
-    font-size: 25px;
+    font-family: 'serif';
+    font-size: 28px;
+    line-height: 140%;;
 }
+.page-statement {
+    display: flex;
+    
+}
+
 
 /* Footer */
 .footer {
@@ -87,6 +113,49 @@
     margin: 0 12px;
     padding: 0 0 2px 0;
 }
+.contact-links a:hover {
+    border-bottom: 3px solid var(--yellBright);
+    color: #000;
+}
 .copyright {
     margin: 12px;
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+/* 
+Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+    }
+    .navbar h1 {
+        margin: 0 12px;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .home h1 {
+        font-size: 120px;
+    }
+    
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .home h1 {
+        font-size: 160px;
+    }
 }
