@@ -1,11 +1,17 @@
 import avatar from '../assets/img/avatar.png';
 import hello from '../assets/img/icon-hello.svg';
+import iconCode from '../assets/img/icon-code.svg';
 
 const Home = () => {
     return ( 
         <>
         <div className="home-block">
-            <h2>Front End Developer</h2>
+            <span className="page-title">Front End Developer</span>
+            <div className="contact-bar">
+                <span className="contact-bar-number">+77 (0) 7921 293782</span>
+                <span className="contact-bar-email">mike@makemassair.co.uk</span>
+                <span className="contact-bar-locale">Liverpool, UK</span>
+            </div>
         </div>
         <div className="home">
             <div className="page-statement">
@@ -21,14 +27,21 @@ const Home = () => {
                 <div className="avatar">
                     <img src={avatar} alt="Michael Frank Samaras" />
                 </div>
-                
+            </div>
+            <div className="name">
+                <h1>Michael <em>Frank</em> Samaras</h1>                
+            </div>
+            <div className="content">
+                <div className="col-icon"><img src={iconCode} alt="" className="iconCode" /></div>
+                <div className="copy">
+                    <div className="copy-sub-head">An introduction.</div>
+                    <div className="copy-para">
+                        <p>Until recently I was a self taught HTML + CSS web designer working primarily with WordPress. In November '22 I undertook a 16-week front-end web development boot camp that ran until March '23.</p> 
+                        <p>As a result I now have foundational knowledge of JavaScript, React, ES6, JSX, Node.js, APIs, and GitHub.</p>
+                        <p>This site has been built in the React JavaScript library, following what I learnt in the final modules of the course.</p>
+                    </div>
                 </div>
-
-            <h1>Michael <em>Frank</em> Samaras </h1>
-                <p className="intro"></p>
-                <p className="intro">Until recently I was a self taught HTML/CSS web developer working with WordPress, and XML.</p> 
-                
-                <p className="intro">In November 2022 I undertook a 16 week front-end web developer bootcamp with edX and Skills4Life that ran until March 2023. I now have foundational knowledge of JavaScript, APIs, ES6, Node.js, JSX, and React. As it goes, this portfolio website has been built in React.</p>
+            </div>
         </div>
         </>
      );

@@ -95,9 +95,11 @@
 }
 .page-statement {
     display: flex;
-
 }
-
+.home .content {
+    display: flex;
+    flex-direction: row;
+}
 
 /* Footer */
 .footer {
