@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Radley&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap');
 
 .App {
     display: flex;
@@ -95,7 +95,7 @@
 }
 .page-statement {
     display: flex;
-    
+
 }
 
 

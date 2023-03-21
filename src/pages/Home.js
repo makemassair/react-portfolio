@@ -24,7 +24,7 @@ const Home = () => {
                 
                 </div>
 
-            <h1>Michael Frank Samaras </h1>
+            <h1>Michael <em>Frank</em> Samaras </h1>
                 <p className="intro"></p>
                 <p className="intro">Until recently I was a self taught HTML/CSS web developer working with WordPress, and XML.</p> 
                 
