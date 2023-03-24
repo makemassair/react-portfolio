@@ -53,11 +53,12 @@ img.project-screenshot {
     margin: 0 4px 0 0;
 }
 .project-card a {
-    color: var(--black);
+    color: var(--dark);
     font-size: 14px;
     text-decoration: none;
 }
 .project-card a:hover {
+    color: var(--black);
     text-decoration: underline;
     text-decoration-style: solid;
     text-underline-offset: 2px;
