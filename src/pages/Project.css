@@ -1,3 +1,7 @@
+#block2 h2 {
+    font-weight: normal;
+    line-height: 100%;
+}
 .project-list {
     color: var(--black);
     display: flex;
@@ -6,7 +10,7 @@
     padding: 38.4px 19.2px;
 }
 img.project-screenshot {
-    border-radius: 9px;
+    border-radius: 10px;
     max-width: 616px;
     width: 100%;
 }
@@ -17,17 +21,21 @@ img.project-screenshot {
     text-align: center;
 }
 .project-title {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
     letter-spacing: 0.6px;
-    margin: 16px 0 12px;
-    text-align: center;
+    margin: 24px 0 12px 24px;
+    text-align: left;
 }
 .project-urls {
+    border-top: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
     column-gap: 16px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin: 0 24px;
+    padding: 16px 0 0;
 }
 .project-url, .project-github {
     display: flex;
@@ -37,13 +45,16 @@ img.project-screenshot {
     height: 14px;
     margin: 0 4px 0 0;
 }
+.space {
+    border-left: 1px solid rgba(0,0,0,0.1);
+}
 .project-github .icon {
     height: 16px;
     margin: 0 4px 0 0;
 }
 .project-card a {
     color: var(--black);
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: none;
 }
 .project-card a:hover {
@@ -51,6 +62,23 @@ img.project-screenshot {
     text-decoration-style: solid;
     text-underline-offset: 2px;
 }
+.description {
+    color: var(--black);
+    display: flex;
+    font-family: 'Lora', serif;
+    font-size: 13px;
+    justify-content: flex-start;
+    line-height: 140%;
+    margin: 0 auto 28px;
+    padding: 0;
+    text-align: left;
+    max-width: 616px;
+}
+.description p {
+    margin: 0 24px;
+}
+
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .project-list {
@@ -58,6 +86,7 @@ img.project-screenshot {
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 96px 32px 32px;
+        max-width: 1024px;
     }
     .project-card {
         display: flex;
@@ -69,12 +98,34 @@ img.project-screenshot {
     }
     .project-title {
         font-size: 16px;
-        margin: 24px 0 12px 9px;
+        margin: 24px 0 14px 9px;
         text-align: left;
     }
     .project-urls {
+        justify-content: flex-end;
+        margin: 0 9px;
+        padding-right: 9px;
+    }
+    .project-card a {
+        font-size: 14px;
+    }
+    .description {
+        font-size: 15px;
         justify-content: flex-start;
-        margin: 0 0 0 9px;
+        width: 100%;
+     }
+    .description p {
+        margin: 0 9px;
+    }
+    .projects .page-statement {
+        justify-content: center;
+        padding: 57.6px 32px 32px; 
+    }
+    #block2 h2 {
+        font-size: 32px;
+        font-family: 'Radley', serif;
+        font-weight: normal;
+        letter-spacing: -0.04em;
     }
  }
  @media (min-width: 1200px) { 

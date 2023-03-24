@@ -1,0 +1,105 @@
+.contact-block {
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin: 10vw 8vw 6vw;
+}
+.about {
+    color: var(--black);
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    justify-content: center;
+    line-height: 140%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+}
+h4.contact {
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    margin: 38.4px 0 16px;
+    text-align: center;
+}
+input, textarea {
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 4px 4px var(--yellBright);
+    color: var(--dark);
+    display: block;
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    margin: 0 0 16px;
+    padding: 12px 24px;
+    width: calc(100% - 48px);
+}
+input:hover, textarea:hover {
+    border: 1px solid #fff;
+    box-shadow: 1px 1px var(--yellBright);
+}
+input::placeholder, textarea::placeholder {
+    font-weight: normal;
+}
+textarea {
+    border-radius: 10px 10px 0 10px;
+    height: 128px;
+}
+button {
+    background-color: var(--yellBright);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 9px;
+    box-shadow: 4px 4px var(--dark);
+    font-family: 'Arimo', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    padding: 16px 48px;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    width: fit-content;
+}
+button:hover {
+    background-color: #fff;
+    box-shadow: 1px 1px var(--text);
+    cursor: pointer;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .contact-block {
+        margin: 96px auto 6vw;
+        max-width: 1024px;
+        padding: 0 64px;
+        width: calc(100% - 128px);
+    }
+    .contact .page-statement {
+        justify-content: center;
+        padding: 57.6px 32px 32px;
+    }
+    h4.contact {
+        margin: 96px 0 32px;
+    }
+    input, textarea {
+        margin: 0 0 32px;
+    }
+    form {
+        align-items: center;
+    }
+}
+@media (min-width: 1400px) {
+    .contact-block {
+        margin: 96px auto;
+        max-width: 1024px;
+        padding: 0 64px;
+        width: calc(100% - 128px);
+    }
+}

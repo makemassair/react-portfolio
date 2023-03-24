@@ -19,7 +19,7 @@ const Project = ({projects, title}) => {
             <div className="page-statement">
                 <div className="statement-block">
                     <div id="block2">
-                        <p>Some examples of my work.</p>
+                        <h2>Some examples of my work ...</h2>
                     </div>
                 </div>
             </div>
@@ -29,17 +29,16 @@ const Project = ({projects, title}) => {
                 <div className="project-card" key={project.id}>
                     <img src={project.screenshot} alt={ project.title } className="project-screenshot" />
                     <h2 className="project-title">{ project.title }</h2>
+                    <div className="description"><p>{ project.description }</p></div>
                     <div className="project-urls">
                         <div className="project-url">
                             <img src={iconDeployment} alt="" className="icon" />
                             <a className="url" href={ project.url } target="_blank" rel="noopener noreferrer" aria-label="link to GitHub">View</a>
                         </div>
+                        <div className="space"></div>
                         <div className="project-github">
                             <img src={iconGitHub} alt="" className="icon" />
                             <a className="github" href={ project.github } target="_blank" rel="noopener noreferrer" aria-label="link to GitHub">GitHub</a>
-                        </div>
-                        <div className="project-blurb">
-                        { project.description }
                         </div>
                     </div>
                 </div>

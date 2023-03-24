@@ -86,6 +86,8 @@
 .statement-container a {
     color: var(--dark);
     text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
 }
 .statement-container a:hover {
     color: #000;
@@ -94,24 +96,32 @@
 .page-statement {
     display: flex;
     column-gap: 8px;
-    justify-content: space-between;
+    justify-content: center;
     padding: 32px 8vw;
     width: 100%;
+}
+.statement-home {
+    margin: 0 64px 0 0;
 }
 .statement-block img {
     height: 22px;
 }
 #block1 {
-    font-size: 18px;
+    font-family: 'Radley', serif;
+    font-size: 24px;
     font-weight: bold;
+    letter-spacing: -0.02em;
     line-height: 1.35em;
     margin: 0 0 8px;
 }
 #block2 {
-    font-size: 14px;
+    font-size: 16px;
+    font-family: 'Radley', serif;
+    font-weight: normal;
+    letter-spacing: -0.04em;
 }
 #block2 p {
-    margin: 0 0 8px;
+    margin: 0 0 4px;
 }
 .page-statement .avatar img {
     border-radius: 360px;;
@@ -132,16 +142,20 @@
     line-height: 0.8;
     margin: 0 0 64px;
 }
-.copy-sub-head {
+/* .copy-sub-head {
     font-family: 'Arimo', sans-serif;
+    font-size: 16px;
     font-weight: bold;
     letter-spacing: 0.6px;
     line-height: 24px;
-}
+} */
 .home .copy-para p {
+    font-size: 18px;
     font-family: 'Lora', serif;
-    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: -0.02em;
     line-height: 160%;
+    margin: 0 0 1.2rem;
 }
 .home .col-icon {
     margin: 0 0 12px 0;
@@ -173,12 +187,12 @@
     margin: 12px;
 }
 
+
 /* X-Small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 /* 
 Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
-
 
 }
 
@@ -197,19 +211,18 @@ Small devices (landscape phones, 576px and up) */
         display: block;
     }
     .home {
-        margin: 10vw 64px 6vw;
+        margin: 10vw auto 6vw;
         max-width: 1024px;
+        padding: 0 64px;
     }
     .home .col-icon {
-        margin: 0 12px 0 0;
+        margin: 4px 24px 0 0;
     }
     .home .content {
         flex-direction: row;    
     }
     .home .copy-para p {
-        font-family: 'Lora', serif;
-        font-size: 18px;
-        line-height: 160%;
+        font-size: 22px;
     }
     .page-statement {
         align-items: center;
@@ -221,10 +234,14 @@ Small devices (landscape phones, 576px and up) */
         max-width: 180px;
     }
     #block1 {
-        font-size: 42px;
+        font-size: 32px;
+        letter-spacing: -0.04em;
     }
     #block2 {
-        font-size: 18px;
+        font-size: 24px;
+    }
+    #block2 p {
+        margin: 0 0 8px;
     }
     .statement-block img {
         height: 40px;
@@ -240,7 +257,7 @@ Small devices (landscape phones, 576px and up) */
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
     .home h1 {
-        font-size: 140px;
+        font-size: 160px;
     }
     
 }
@@ -252,6 +269,6 @@ Small devices (landscape phones, 576px and up) */
         max-width: 1024px;
     }
     .home h1 {
-        font-size: 170px;
+        font-size: 176px;
     }
 }

@@ -5,7 +5,7 @@
             "title":"Team Profile Generator",
             "url": "https://makemassair.github.io/OOP-Team-Profile-Generator/",
             "github": "https://github.com/makemassair/OOP-Team-Profile-Generator",
-            "description": "an app that generates HTML files using input from a command-line interface",
+            "description": "An app that generates HTML files using input from a command-line interface.",
             "screenshot": "/img/screenshot-team.jpg"
         },
         {
@@ -13,7 +13,7 @@
             "title": "README.md Generator",
             "url": "https://makemassair.github.io/readme-generator-nodejs/",
             "github": "https://github.com/makemassair/readme-generator-nodejs",
-            "description": "markdown generator to easily generate README files for use with repos on GitHub.",
+            "description": "A markdown generator to easily generate README files for use with repos on GitHub.",
             "screenshot": "/img/screenshot-readme.jpg"
         },
         {
@@ -21,7 +21,7 @@
             "title": "Weather Dashboard",
             "url": "https://makemassair.github.io/Weather-Dashboard/",
             "github": "https://github.com/makemassair/Weather-Dashboard",
-            "description": "a dynamically updated weather app using API calls from OpenWeather",
+            "description": "A dynamically updated weather app using API calls from OpenWeather",
             "screenshot": "/img/screenshot-weather.jpg"
         },
         {
@@ -29,7 +29,7 @@
             "title": "Work Day Schedule",
             "url": "https://makemassair.github.io/Work-Day-Scheduler/",
             "github": "https://github.com/makemassair/Work-Day-Scheduler",
-            "description": "simple calendar app using jQuery",
+            "description": "A simple calendar app using jQuery.",
             "screenshot": "/img/screenshot-schedule.jpg"
         },
         {
@@ -37,7 +37,7 @@
             "title": "Code Quiz",
             "url": "https://makemassair.github.io/Code-Quiz/",
             "github": "https://github.com/makemassair/Code-Quiz",
-            "description": "simple mutliple choice, timed quiz in JavaScript.",
+            "description": "A simple multiple choice, timed quiz in JavaScript.",
             "screenshot": "/img/screenshot-quiz.jpg"
         },
         {
@@ -45,7 +45,7 @@
             "title": "Bootstrap Portfolio",
             "url": "https://makemassair.github.io/Bootstrap-Portfolio/",
             "github": "https://github.com/makemassair/Bootstrap-Portfolio", 
-            "description": "a basic one page layou using Bootstrap frontend framework",
+            "description": "A basic one page layout using Bootstrap frontend framework.",
             "screenshot": "/img/screenshot-bootstrap-portfolio.jpg"
         }
     ]
