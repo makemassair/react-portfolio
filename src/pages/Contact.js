@@ -54,7 +54,7 @@ function ContactForm() {
           <textarea name="message" placeholder='enter your message' required></textarea>
           <button type="submit">send</button>
           </form>
-          <span>{result}</span></div>
+          <span class="contact-message">{result}</span></div>
     </div>
 
     </>
