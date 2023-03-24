@@ -47,7 +47,7 @@ function ContactForm() {
     <div className="contact-block">
       {/* <div className="about">If you're interested in having me work on your project, or, want to say hello, drop me a line on the form below, or get at me on one of the links on the bottom of the page.</div> */}
       <div className="form">
-        <h4 className="contact"></h4>
+        {/* <h4 className="contact"></h4> */}
         <form onSubmit={onSubmit}>
           <input type="text" name="name" placeholder='enter your name' required/>
           <input type="email" name="email" placeholder='enter your email' required/>
