@@ -1,10 +1,10 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from '../assets/img/logo.png';
 
 const Navbar = () => {
     return ( 
         <nav className="navbar">
-            <img src={logo} alt="" className="logo" />
+            <Link to="/"><img src={logo} alt="" className="logo" /></Link>
             <div className="links"> 
             <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Home</NavLink>
             <NavLink to="/projects">Projects</NavLink>
