@@ -4,7 +4,7 @@ import logo from '../assets/img/logo.png';
 const Navbar = () => {
     return ( 
         <nav className="navbar">
-            <h1>makemassair</h1>
+            <img src={logo} alt="" className="logo" />
             <div className="links"> 
             <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Home</NavLink>
             <NavLink to="/projects">Projects</NavLink>

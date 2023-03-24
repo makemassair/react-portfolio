@@ -1,6 +1,7 @@
 import avatar from '../assets/img/avatar.png';
 import hello from '../assets/img/icon-hello.svg';
 import iconCode from '../assets/img/icon-code.svg';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return ( 
@@ -8,26 +9,28 @@ const Home = () => {
         <div className="home-block">
             <span className="page-title">Front End Developer</span>
             <div className="contact-bar">
-                <span className="contact-bar-number">+77 (0) 7921 293782</span>
+                <span className="contact-bar-number">+44 (0) 7921 293782</span>
                 <span className="contact-bar-email">mike@makemassair.co.uk</span>
                 <span className="contact-bar-locale">Liverpool, UK</span>
             </div>
         </div>
-        <div className="home">
+        <div className="statement-container">
             <div className="page-statement">
                 <div className="statement-block">
                     <div id="block1">
-                        Hello <img src={hello} alt="" className="hello" />
+                        Hello. <img src={hello} alt="" className="hello" />
                     </div>
                     <div id="block2">
-                        <p>On this site you'll find some of my work.</p>
-                        <p>Feel free to drop me any questions.</p>
+                        <p>On this site you'll find some of <Link to={"/projects"}>my work</Link>.</p>
+                        <p>Feel free to drop me <Link to={"/contact"}>any questions</Link>.</p>
                     </div>
                 </div>
                 <div className="avatar">
-                    <img src={avatar} alt="Michael Frank Samaras" />
+                    <img src={avatar} alt="Michael Frank Samaras"/>
                 </div>
             </div>
+        </div>
+        <div className="home">
             <div className="name">
                 <h1>Michael <em>Frank</em> Samaras</h1>                
             </div>

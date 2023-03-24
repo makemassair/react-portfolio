@@ -1,17 +1,51 @@
+import "./Project.css";
+import iconDeployment from '../assets/img/icon-deployment@2x.svg';
+import iconGitHub from '../assets/img/icon-github@2x.svg';
+
+
 const Project = ({projects, title}) => {
 
     return ( 
+        <>
+        <div className="home-block">
+            <span className="page-title">{ title }</span>
+            <div className="contact-bar">
+                <span className="contact-bar-number">+44 (0) 7921 293782</span>
+                <span className="contact-bar-email">mike@makemassair.co.uk</span>
+                <span className="contact-bar-locale">Liverpool, UK</span>
+            </div>
+        </div>
+        <div className="statement-container">
+            <div className="page-statement">
+                <div className="statement-block">
+                    <div id="block2">
+                        <p>Some examples of my work.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div className="project-list">
-            <h2>{ title }</h2>
             {projects.projects.map(project => (
                 <div className="project-card" key={project.id}>
-                    <h2 className="project-title">{ project.title }</h2>
                     <img src={project.screenshot} alt={ project.title } className="project-screenshot" />
-                    <a className="project-github" href={ project.github } target="_blank" rel="noopener noreferrer" aria-label="link to GitHub">GitHub</a>
-                    <a className="project-url" href={ project.url } target="_blank" rel="noopener noreferrer" aria-label="link to GitHub">Deployed App</a>
+                    <h2 className="project-title">{ project.title }</h2>
+                    <div className="project-urls">
+                        <div className="project-url">
+                            <img src={iconDeployment} alt="" className="icon" />
+                            <a className="url" href={ project.url } target="_blank" rel="noopener noreferrer" aria-label="link to GitHub">View</a>
+                        </div>
+                        <div className="project-github">
+                            <img src={iconGitHub} alt="" className="icon" />
+                            <a className="github" href={ project.github } target="_blank" rel="noopener noreferrer" aria-label="link to GitHub">GitHub</a>
+                        </div>
+                        <div className="project-blurb">
+                        { project.description }
+                        </div>
+                    </div>
                 </div>
             ))}
         </div>
+        </>
      );
 }
  

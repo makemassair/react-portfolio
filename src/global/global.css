@@ -1,6 +1,7 @@
 @import url("../assets/css/styles.css"); /* Using a url */
 
 :root {
+  --black: #2E2909;
   --dark: #544A08;
   --text: #342D00;
   --yell: #FEDD00;
@@ -23,4 +24,10 @@ code {
     monospace;
 }
 
-a {text-decoration: none;}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  transition-property: color, background, text-shadow;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
