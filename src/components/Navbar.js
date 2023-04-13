@@ -9,7 +9,7 @@ const Navbar = () => {
             <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Home</NavLink>
             <NavLink to="/projects">Projects</NavLink>
             <NavLink to="/contact">Contact</NavLink>
-            <a href="https://makemassair.co.uk/cv/MichaelFrankSamaras_CV_March2023.pdf" className="contact-resume" target="_blank" rel="noopener noreferrer" aria-label="link to resume">Resume</a>
+            <a href="https://makemassair.co.uk/cv/michael-samaras-cv-march23.pdf" className="contact-resume" target="_blank" rel="noopener noreferrer" aria-label="link to resume">Resume</a>
             </div>
         </nav>
      );
