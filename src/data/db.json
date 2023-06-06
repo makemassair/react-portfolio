@@ -3,7 +3,7 @@
         {
             "id": 1,
             "title":"Team Profile Generator",
-            "url": "https://makemassair.github.io/OOP-Team-Profile-Generator/",
+            "url": "https://makemassair.github.io/Team-Profile-Generator/",
             "github": "https://github.com/makemassair/OOP-Team-Profile-Generator",
             "description": "An app that generates HTML files using input from a command-line interface.",
             "screenshot": "./img/projects/screenshot-team.jpg"
@@ -11,7 +11,7 @@
         {
             "id": 2,
             "title": "README.md Generator",
-            "url": "https://makemassair.github.io/readme-generator-nodejs/",
+            "url": "https://makemassair.github.io/README-generator/",
             "github": "https://github.com/makemassair/readme-generator-nodejs",
             "description": "A markdown generator to easily generate README files for use with repos on GitHub.",
             "screenshot": "./img/projects/screenshot-readme.jpg"
